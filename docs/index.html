@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AdivinHit</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>AdivinHit</h1>
+  <div class="container" id="setup">
+    <label>Tempo da partida (segundos): <input type="number" id="gameTime" value="30" disabled></label>
+    <br>
+    <label>Escolha o estilo: <select id="genreSelect"></select></label>
+    <br>
+    <button id="startGame">Jogar</button>
+  </div>
+
+  <div id="game" class="container" style="display: none;">
+    <h2 id="question"></h2>
+    <div class="options">
+      <div id="left" class="option">Pular</div>
+      <div id="right" class="option">Correto</div>
+    </div>
+    <p id="timer"></p>
+    <p>Acertos: <span id="score">0</span></p>
+  </div>
+
+  <div id="summary" class="container" style="display: none;">
+    <h2>Fim do Jogo!</h2>
+    <p>Total de Acertos: <span id="finalScore">0</span></p>
+    <p>Total de Músicas Exibidas: <span id="totalPlayed">0</span></p>
+    <h3>Histórico:</h3>
+    <ul id="history"></ul>
+    <button id="restartGame">Jogar Novamente</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

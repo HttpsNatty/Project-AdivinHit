@@ -1,0 +1,75 @@
+body { 
+  text-align: center; 
+  font-family: 'Poppins', sans-serif; 
+  background: linear-gradient(to right, #4facfe, #00f2fe); 
+  color: white; 
+  margin: 0; 
+  padding: 0; 
+}
+
+h1 { 
+  margin-top: 20px; 
+  font-size: 2.5em; 
+}
+
+.container { 
+  max-width: 600px; 
+  margin: 20px auto; 
+  padding: 20px; 
+  background: rgba(255, 255, 255, 0.2); 
+  border-radius: 10px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+label, select, input, button { 
+  font-size: 1.2em; 
+  margin: 10px 0; 
+}
+
+button { 
+  background: #ff4081; 
+  border: none; 
+  color: white; 
+  padding: 10px 20px; 
+  border-radius: 5px; 
+  cursor: pointer; 
+  transition: 0.3s; 
+}
+
+button:hover { 
+  background: #e6006e; 
+}
+
+.options { 
+  display: flex; 
+  justify-content: space-around; 
+  margin-top: 20px; 
+}
+
+.option { 
+  flex: 1; 
+  padding: 20px; 
+  margin: 10px; 
+  font-size: 1.5em; 
+  border-radius: 10px; 
+  cursor: pointer; 
+  transition: 0.3s; 
+}
+
+#left { 
+  background: #ff6b6b; 
+}
+
+#right { 
+  background: #51cf66; 
+}
+
+#left:hover, #right:hover { 
+  opacity: 0.8; 
+}
+
+/* Remove as bolinhas da lista do histórico */
+#history { 
+  list-style: none; 
+  padding: 0; 
+}
